@@ -26,6 +26,16 @@ ul, ol {
 a {
     text-decoration: none;
 }
+
+.visually-hidden{
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+}
+
 /* common */
 .container { 
 max-width: 1158px;
@@ -287,6 +297,7 @@ border-right: 1px solid #e7e9fc;
 
 .portfolio-item {
     flex-basis: calc((100% - 48px) / 3);
+    row-gap: 48px;
 }
 
 .portfolio-title {
@@ -302,7 +313,6 @@ color: #2E2F42;
 
 .portfolio-subtitle {
     margin-bottom: 8px;
-    row-gap: 48px;
 font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
