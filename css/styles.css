@@ -27,14 +27,18 @@ a {
     text-decoration: none;
 }
 
-.visually-hidden{
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-border: 0;
-padding: 0;
-}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 /* common */
 .container { 
@@ -292,12 +296,13 @@ border-right: 1px solid #e7e9fc;
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 24px; 
+    row-gap: 48px;
 }
 
 .portfolio-item {
     flex-basis: calc((100% - 48px) / 3);
-    row-gap: 48px;
+   
 }
 
 .portfolio-title {
