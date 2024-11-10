@@ -5,7 +5,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
 }
-
+/* reset */
 h1, 
 h2, 
 h3, 
@@ -24,11 +24,25 @@ ul, ol {
 a {
     text-decoration: none;
 }
-
+/* common */
 .container { 
 max-width: 1158px;
 padding: 0 15px;
 margin: 0 auto;
+}
+/* header */
+.header {
+    border: 1px solid #e7e9fc;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
 }
 
 .logo-web {
@@ -52,7 +66,20 @@ margin: 0 auto;
     color: #2E2F42;
 }
 
+.logo {
+    padding: 24px 0;
+    margin-right: 76px;
+}
+
+.header-list {
+display: flex;
+align-items: center;
+gap: 40px;
+}
+
 .header-link {
+    display: block;
+    padding: 24px 0;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
@@ -60,15 +87,25 @@ letter-spacing: 0.02em;
 text-align: left;
 color: #2E2F42;
 }
+
 .header-link:hover,
 .header-link:focus {
   color: #404BBF;
 }
 
+.address-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .address {
  font-style: normal;
+ margin-left: auto;
 }
 .address-link {
+    display: block;
+    padding: 24px 0;
 font-size: 16px;
 font-weight: 400;
 line-height: 1.5;
@@ -82,11 +119,17 @@ color: #434455;
 color: #404BBF;
 }
 
+/* section one */
+
 .heroimage {
 background-color: #2E2F42;
+padding-top: 188px;
+padding-bottom: 188px;
 }
 
 .heroimage-title {
+    margin: 0 auto 48px;
+    width: 496px;
 font-size: 56px;
 font-weight: 700;
 line-height: 1.07;
@@ -96,6 +139,12 @@ color: #ffffff;
 }
 
 .button {
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;
+  border: 0;
+    padding: 16px 32px;
+    text-align: center;
 font-family: "Roboto", sans-serif;
 font-size: 16px;
 font-weight: 500;
@@ -109,6 +158,24 @@ background-color: #4D5AE5;
 .button:hover,
 .button:focus {
    background-color: #404BBF;
+}
+
+/* section two */
+
+.solution {
+    padding: 120px 0;
+}
+
+.solution-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    margin: 0 auto;
+}
+
+.solution-list .solution-item {
+ flex-basis: calc((100% - 72px) / 4)
 }
 
 .solution-title {
@@ -126,6 +193,7 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 text-align: left;
 color: #2e2f42;
+margin-bottom: 8px;
 }
 
 .solution-text {
@@ -138,14 +206,36 @@ text-align: left;
 color: #434455;
 }
 
+/* section three */
+
 .team {
     background-color: #F4F4FD;
+padding: 120px;
 }
 
 .team-item {
     background-color: #FFFFFF;
 }
+
+.team-list {
+    display: flex;
+    gap: 24px;
+
+}
+
+.team-name {
+    padding: 32px 0;
+}
+
+.team-item {
+    background-color: #ffffff;
+    flex-basis: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4px;
+
+}
+
 .team-title {
+    margin-bottom: 72px;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -155,6 +245,7 @@ color: #434455;
     color: #2E2F42;
 }
 .team-subtitle {
+    margin-bottom: 8px;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -172,7 +263,31 @@ text-align: center;
 color: #434455;
 }
 
+/* section four */
+
+.portfolio {
+    padding: 120px 0;
+}
+
+.portfolio-name {
+    padding: 32px 16px;
+    border-bottom: 1px solid #e7e9fc;
+border-left: 1px solid #e7e9fc;
+border-right: 1px solid #e7e9fc;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.portfolio-item {
+    flex-basis: calc((100% - 48px) / 3);
+}
+
 .portfolio-title {
+    margin-bottom: 72px;
 font-size: 36px;
 font-weight: 700;
 line-height: 1.11;
@@ -183,6 +298,7 @@ color: #2E2F42;
 }
 
 .portfolio-subtitle {
+    margin-bottom: 8px;
 font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
@@ -199,9 +315,16 @@ letter-spacing: 0.02em;
 text-align: left;
 color: #434455;
 }
-
+/* footer */
 .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: #2E2F42;
+}
+
+.footer .logo-web{
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-studio-white {
@@ -212,6 +335,7 @@ color: #434455;
 }
 
 .footer-text {
+    width: 264px;
 font-size: 16px;
 font-weight: 400;
 line-height: 1.5;
